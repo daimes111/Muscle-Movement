@@ -12,8 +12,9 @@
     margin: 20px auto;
 }
 .comment-heading {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    display: inline-block;
+    /* align-items: center; */
     height: 50px;
     font-size: 14px;
 }
