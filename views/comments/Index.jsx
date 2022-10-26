@@ -6,15 +6,20 @@ class Index extends React.Component {
     render(){
         const { comments } = this.props
         return(
-            <Default>
-            <ul>
+            <Default title='All Comments'>
+            <div title='Muscle Diagram'></div>
+            <ul className="comment-thread">
                 {comments.map((comment) => {
                     const { name, userComment, muscleGroup, _id, enjoyWorkout } = comment
                     return(
-                        <li key={_id}>
-                            {name} {enjoyWorkout ? `enjoys working out ${muscleGroup} because` : `are/is not a fan of working out ${muscleGroup} because`}<br />
-                            {userComment}<br />
+                        <li key={_id} className="comment">
+                            <div className="comment-heading">
+                            <span className='comment-author'>{name}</span> <br />
                             Created on: {moment().format("MMM Do YY")}
+                            </div>
+                            <div className='comment-body'>{userComment}
+                            </div>
+                            
                             
                             <form method="POST" action={`/comments/${_id}?_method=DELETE`}>
                                 <input type="submit" value={`Delete ${name}'s comment`}/>
