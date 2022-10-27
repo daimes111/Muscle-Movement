@@ -3,19 +3,19 @@ const router = express.Router()
 const dataControler = require('./dataController')
 const viewController = require('./viewController')
 
-//index
+// index
 router.get('/', dataControler.index, viewController.index)
-//new
+// new
 router.get('/new', viewController.newView)
-//delete
+// delete
 router.delete('/:id', dataControler.destroy, viewController.redirectHome)
-//update
+// update
 router.put('/:id', dataControler.update, viewController.redirectHome)
-//create
+// create
 router.post('/', dataControler.create, viewController.redirectHome)
-//edit
+// edit
 router.get('/:id/edit', dataControler.showEdit, viewController.edit)
-//show
+// show
 // router.get('/:id', dataControler.showEdit, viewController.redirectHome)
 
 module.exports = router
