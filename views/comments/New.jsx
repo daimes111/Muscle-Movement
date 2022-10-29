@@ -5,6 +5,7 @@ class New extends React.Component {
   render () {
     return (
       <Default>
+        <body>  
         <form method='POST' action='/comments'>
           <input type='text' name='name' placeholder='Name Here' /><br />
           <textarea rows='8' cols='25' name='userComment' placeholder='Enter comment here' /><br />
@@ -19,6 +20,7 @@ class New extends React.Component {
           Enjoy working out this Muscle Group?: <input type='checkbox' name='enjoyWorkout' value='true' defaultChecked /><br />
           <input type='submit' value='Add Comment' />
         </form>
+        </body>
       </Default>
     )
   }

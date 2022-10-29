@@ -1,12 +1,16 @@
 .muscle-groups {
   position: relative;
   background: #eee;
-  width: 380px;
+  width: 70%;
+  height: calc(70vh - 150px);
+  height: -moz-calc(70vh - 150px);
+  height: -webkit-calc(70vh - 150px);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
   overflow: hidden;
   border-top: 0.75rem solid #00BCD4;
+  top: -100px;
 }
 .muscle-groups h1 {
   margin: -0.5rem -1rem 1rem;
@@ -206,7 +210,7 @@ main .info a {
   color: #eee;
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -215,30 +219,33 @@ nav {
   width: 100vw;
 }
 
-nav, a {
+header, a {
   color: white;
 }
 
-.title {
+.muscle-title {
+  width: 100vw;
+  padding: 10px;
   text-align: center;
+  font-size: 50px;
+  /* border: solid black */
 }
 .comments-header {
   position: relative;
   text-align: center;
-  color: white;
-  size: 150px;
+  color: green;
+  /* size: 150px; */
 }
-
-
 
 .comment-thread {
   width: 500px;
   max-width: 100%;
   margin: auto;
   padding: 0 30px;
-  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("https://hips.hearstapps.com/hmg-prod/images/spotive-man-and-woman-lifting-heavy-barbells-royalty-free-image-1569601646.jpg") no-repeat center fixed;
+  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("https://hips.hearstapps.com/hmg-prod/images/spotive-man-and-woman-lifting-heavy-barbells-royalty-free-image-1569601646.jpg") no-repeat center center fixed;
   border: 1px solid transparent; /* Removes margin collapse */
   list-style: none;
+  top:-20px;
 }
 .comment {
   /* position: relative; */
@@ -263,4 +270,12 @@ nav, a {
 }
 .comment-author:hover {
   text-decoration: underline;
+}
+
+.show-page{
+  background-color: blue;
+}
+
+.test {
+  color: pink;
 }

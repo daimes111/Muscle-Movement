@@ -7,18 +7,20 @@ class Default extends React.Component {
       <html>
         <head>
           {/* <link rel="stylesheet" href="/css/app.css" />  */}
+          
           <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' />
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,900' />
-          <link rel='stylesheet' href='./css/style.css' />
+          <link rel='stylesheet' href='/css/style.css' />
           <title>{title}</title>
         </head>
-        <nav>
+        <header>
             <a href='/comments'>Go Home</a>
             Change Muscle Group
             <a href='/comments/new'>Add a New Comment</a>
             Log In
-          </nav>
-        <body>
+        </header>
+        <div className='muscle-title'>Muscle Movement</div>
+        <body className = {this.props.pageClass? this.props.pageClass : ''}>
           
           <main>
 
@@ -47,11 +49,11 @@ class Default extends React.Component {
             </div>
           </main>
           {/* <div>Muscle Diagram</div> */}
-          <h1 className='title'>{title}</h1>
+          <h1>{title}</h1>
           {this.props.children}
 
         </body>
-        <footer>Created By Devon</footer>
+        {/* <footer>Created By Devon</footer> */}
       </html>
 
     )

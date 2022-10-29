@@ -1,4 +1,4 @@
-const { rawListeners } = require('../models/comment')
+// const { rawListeners } = require('../models/comment') not sure when this was added. Double check before delete
 const Comment = require('../models/comment')
 const dataControler = {
   index (req, res, next) {

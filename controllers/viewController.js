@@ -9,6 +9,9 @@ const viewController = {
   edit (req, res, next) {
     res.render('comments/Edit', res.locals.data)
   },
+  show (req, res, next) {
+    res.render('comments/Show', res.locals.data)
+  },
   redirectHome (req, res, next) {
     res.redirect(RESOURCE_PATH)
   }
