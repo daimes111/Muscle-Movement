@@ -1,11 +1,16 @@
 body {
-  background: rgb(176, 173, 173) no-repeat cover;
-  background: linear-gradient(50deg, rgb(49, 49, 49), rgb(236, 232, 232));
+  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.2)), url("https://hips.hearstapps.com/hmg-prod/images/spotive-man-and-woman-lifting-heavy-barbells-royalty-free-image-1569601646.jpg") no-repeat center center fixed;
+  /* background: rgb(176, 173, 173) no-repeat cover;
+  background: linear-gradient(50deg, rgb(49, 49, 49), rgb(236, 232, 232)); */
   display: block;
   position: relative;
   /* margin: 0; */
   /* padding: 0; */
   height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 } 
 
 .index-page {
@@ -253,7 +258,8 @@ header, a {
   max-width: 100%;
   margin: auto;
   padding: 0 30px;
-  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("https://hips.hearstapps.com/hmg-prod/images/spotive-man-and-woman-lifting-heavy-barbells-royalty-free-image-1569601646.jpg") no-repeat center center fixed;
+ /* background: rgba(176, 173, 173, 0.6) no-repeat cover; */
+  background: linear-gradient(50deg, rgba(127, 125, 125, 0.7), rgba(189, 182, 182, 0.9));
   border: 1px solid transparent; /* Removes margin collapse */
   list-style: none;
   top:-20px;
@@ -292,7 +298,8 @@ header, a {
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
   overflow: hidden;
   border-top: 0.75rem solid #3e494b;
-  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("https://hips.hearstapps.com/hmg-prod/images/spotive-man-and-woman-lifting-heavy-barbells-royalty-free-image-1569601646.jpg") no-repeat center center fixed;
+  background: linear-gradient(50deg, rgba(127, 125, 125, 0.7), rgba(189, 182, 182, 0.9));
+  padding-bottom: 10px;
 
   /* border: solid black; */
 }
