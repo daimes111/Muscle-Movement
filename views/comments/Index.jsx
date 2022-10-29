@@ -6,8 +6,8 @@ class Index extends React.Component {
   render () {
     const { comments } = this.props
     return (
-      <Default>
-        <body>
+      <Default pageClass='index-page'>
+        
           <ul className='comment-thread'><span className='comments-header' style={{ fontSize: '60px' }}>Comments</span>
             {comments.map((comment) => {
               const { name, userComment, muscleGroup, _id, enjoyWorkout } = comment
@@ -23,17 +23,12 @@ class Index extends React.Component {
                   <form method='GET' action={`/comments/${_id}`}>
                     <input type='submit' value="View Comment" />
                   </form>
-                  <form method='POST' action={`/comments/${_id}?_method=DELETE`}>
-                    <input type='submit' value={`Delete ${name}'s comment`} />
-                  </form>
-                  <form method='GET' action={`/comments/${_id}/edit`}>
-                    <input type='submit' value={`Update ${name}'s comment`} />
-                  </form>
+                 
                 </li>
               )
             })}
           </ul>
-        </body>
+        
       </Default>
     )
   }

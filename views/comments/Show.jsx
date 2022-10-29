@@ -6,11 +6,18 @@ class Show extends React.Component {
     const { name, userComment, _id } = this.props.comment
     const capName = name[0].toUpperCase() + name.substring(1)
     return (
-      <Default title={`${capName}'s Comment`}>
-        <body>
-        <p className='test'>Hello Nando!</p>
-        {/* <p className='card'>{capName} is {color</p> */}
-        </body>
+      <Default title={`${capName}'s Comment`} pageClass='show-page'>
+       <div className='form-box'>
+        <h1>{userComment}</h1>
+        <form method='POST' action={`/comments/${_id}?_method=DELETE`}>
+                    <input type='submit' value={`Delete ${name}'s comment`} />
+                  </form>
+                  <form method='GET' action={`/comments/${_id}/edit`}>
+                    <input type='submit' value={`Update ${name}'s comment`} />
+                  </form>
+                  
+       </div>
+    
       </Default>
     )
   }

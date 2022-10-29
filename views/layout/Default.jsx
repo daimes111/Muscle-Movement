@@ -7,10 +7,10 @@ class Default extends React.Component {
       <html>
         <head>
           {/* <link rel="stylesheet" href="/css/app.css" />  */}
-          
+         
           <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' />
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,900' />
-          <link rel='stylesheet' href='/css/style.css' />
+           <link rel='stylesheet' href='/css/style.css' />
           <title>{title}</title>
         </head>
         <header>
@@ -22,7 +22,7 @@ class Default extends React.Component {
         <div className='muscle-title'>Muscle Movement</div>
         <body className = {this.props.pageClass? this.props.pageClass : ''}>
           
-          <main>
+          <main className='muscle-table'>
 
             <div className='muscle-groups'>
               <h1>Muscle Group Selector</h1>

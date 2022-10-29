@@ -1,3 +1,18 @@
+body {
+  background: rgb(176, 173, 173) no-repeat cover;
+  background: linear-gradient(50deg, rgb(49, 49, 49), rgb(236, 232, 232));
+  display: block;
+  position: relative;
+  /* margin: 0; */
+  /* padding: 0; */
+  height: 100vh;
+} 
+
+.index-page {
+  font-family: Roboto;
+  columns: 2;
+} 
+/* Muscle group box */
 .muscle-groups {
   position: relative;
   background: #eee;
@@ -11,6 +26,7 @@
   overflow: hidden;
   border-top: 0.75rem solid #00BCD4;
   top: -100px;
+  /* display: none; */
 }
 .muscle-groups h1 {
   margin: -0.5rem -1rem 1rem;
@@ -163,7 +179,7 @@
 }
 .muscle-groups label[for=lats]:hover ~ svg #Lats path {
   opacity: 0.75;
-}rs
+}
 .muscle-groups .lats:checked ~ svg #Lats path {
   opacity: 0.8;
   fill: #00BCD4 !important;
@@ -175,16 +191,6 @@
   opacity: 0.8;
   fill: #00BCD4 !important;
 }
-
-html {
-  background: rgb(176, 173, 173) no-repeat cover;
-  background: linear-gradient(50deg, rgb(49, 49, 49), rgb(236, 232, 232));
-} 
-
-body {
-  font-family: Roboto;
-  columns: 2;
-} 
 
 main {
   display: flex;
@@ -209,8 +215,9 @@ main .info:hover {
 main .info a {
   color: #eee;
 }
-
+/* All pages header  */
 header {
+  position:relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -223,6 +230,8 @@ header, a {
   color: white;
 }
 
+
+/* index page css */
 .muscle-title {
   width: 100vw;
   padding: 10px;
@@ -231,9 +240,11 @@ header, a {
   /* border: solid black */
 }
 .comments-header {
-  position: relative;
+  /* position: relative; */
   text-align: center;
+  margin: auto;
   color: green;
+  border: solid black;
   /* size: 150px; */
 }
 
@@ -272,10 +283,46 @@ header, a {
   text-decoration: underline;
 }
 
-.show-page{
-  background-color: blue;
+/* Show and New page css */
+.form-box {
+  width: 35%;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-top: 0.75rem solid #3e494b;
+  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("https://hips.hearstapps.com/hmg-prod/images/spotive-man-and-woman-lifting-heavy-barbells-royalty-free-image-1569601646.jpg") no-repeat center center fixed;
+
+  /* border: solid black; */
 }
 
-.test {
-  color: pink;
+.show-page, .edit-page, .new-page {
+  margin-bottom: 10px;
+  text-align: center;
+  /* padding: 2rem 0; */
+}
+.new-page {
+
+}
+.show-page > .muscle-table{
+  display: none;
+  
+}
+.new-page  > .muscle-table{
+  display: none;
+  border: black;
+}
+.edit-page > .muscle-table{
+  display: none;
+  border: black;
+}
+.show-page > .muscle-title{
+  margin-bottom: 10px;
+}
+.new-page  > .muscle-title{
+  margin-bottom: 10px;
+}
+.edit-page > .muscle-title{
+  margin-bottom: 5%;
 }

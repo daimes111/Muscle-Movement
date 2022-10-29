@@ -27,7 +27,7 @@ const dataControler = {
   },
   update (req, res, next) {
     req.body.enjoyWorkout = !!(req.body.enjoyWorkout === 'true' || req.body.enjoyWorkout === 'on')
-    Comment.findByIdAndUpdate(req.params.id, (err, updatedComment) => {
+    Comment.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedComment) => {
       if (err) {
         res.status(404).send({
           msg: err.message

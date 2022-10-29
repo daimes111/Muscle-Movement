@@ -5,8 +5,8 @@ class Edit extends React.Component {
   render () {
     const { name, userComment, muscleGroup, enjoyWorkout, _id } = this.props.comment
     return (
-      <Default>
-        <form method='POST' action={`/comments/${_id}?_method=PUT`}>
+      <Default pageClass='edit-page' title={`Edit ${name}'s Comment`}>
+        <form className='form-box' method='POST' action={`/comments/${_id}?_method=PUT`}>
           Edit name: <input type='text' name='name' defaultValue={name} /><br />
           Edit comment: <textarea name='userComment' cols='25' rows='8' defaultValue={userComment} /><br />
           Edit muscle group:  <select name='muscleGroup' id='muscleGroup' defaultValue={muscleGroup}>
