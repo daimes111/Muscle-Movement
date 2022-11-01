@@ -14,29 +14,36 @@ body {
 } 
 
 .index-page {
+  position: relative;
   font-family: Roboto;
   columns: 2;
+  border: solid black;
+  overflow: hidden;
 } 
 /* Muscle group box */
-.muscle-groups {
+.muscle-table {
   position: relative;
-  background: #eee;
-  width: 70%;
-  height: calc(70vh - 150px);
-  height: -moz-calc(70vh - 150px);
-  height: -webkit-calc(70vh - 150px);
+}
+.muscle-groups {
+  position: absolute;
+  /* float: left; */
+  background: rgba(238, 238, 238, 0.909);
+  width: 60%;
+  height: calc(60vh - 150px);
+  height: -moz-calc(60vh - 150px);
+  height: -webkit-calc(60vh - 150px);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  border-top: 0.75rem solid #00BCD4;
-  top: -100px;
+  border-top: 0.75rem solid #00bbd4d0;
+  top: 250px;
   /* display: none; */
 }
 .muscle-groups h1 {
   margin: -0.5rem -1rem 1rem;
   padding: 0 1rem 0.75rem;
-  background: #00BCD4;
+  background: #00bbd4d0;
   color: #eee;
   text-align: center;
   font-size: 1.25rem;
@@ -240,29 +247,39 @@ header, a {
 .muscle-title {
   width: 100vw;
   padding: 10px;
+  margin-top: 10px;
+  margin-bottom: -70px;
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
   /* border: solid black */
 }
+.comments {
+position: relative;
+top: -10%;
+}
 .comments-header {
-  /* position: relative; */
-  text-align: center;
   margin: auto;
-  color: green;
-  border: solid black;
-  /* size: 150px; */
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2%;
 }
 
 .comment-thread {
+  position:relative;
   width: 500px;
   max-width: 100%;
   margin: auto;
   padding: 0 30px;
  /* background: rgba(176, 173, 173, 0.6) no-repeat cover; */
-  background: linear-gradient(50deg, rgba(127, 125, 125, 0.7), rgba(189, 182, 182, 0.9));
-  border: 1px solid transparent; /* Removes margin collapse */
+  /* background: linear-gradient(50deg, #00bbd458, #29b5c7d0); */
+  background: linear-gradient(50deg, #00bbd4ab, #0de1fc9d);
+
+  border: 1px solid transparent; /* Removes margin collapse transparent */
   list-style: none;
   top:-20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  color: rgb(50, 41, 41);
 }
 .comment {
   /* position: relative; */
@@ -276,6 +293,9 @@ header, a {
   height: 50px;
   font-size: 14px;
 }
+.group-header {
+  font-weight: bold;
+}
 .comment-info {
   color: rgba(0, 0, 0, 0.5);
   margin-left: 10px;
@@ -284,6 +304,7 @@ header, a {
   color: rgba(0, 0, 0, 0.85);
   font-weight: bold;
   text-decoration: none;
+  font-size: larger;
 }
 .comment-author:hover {
   text-decoration: underline;
@@ -298,10 +319,16 @@ header, a {
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
   overflow: hidden;
   border-top: 0.75rem solid #3e494b;
-  background: linear-gradient(50deg, rgba(127, 125, 125, 0.7), rgba(189, 182, 182, 0.9));
+  background: linear-gradient(50deg, #00bbd4ab, #0de1fc9d);
+  /* background: linear-gradient(50deg, rgba(76, 143, 194, 0.7), rgba(179, 210, 238, 0.9)); */
   padding-bottom: 10px;
 
   /* border: solid black; */
+}
+
+.btns {
+  display: inline-block;
+  padding: 5px;
 }
 
 .show-page, .edit-page, .new-page {

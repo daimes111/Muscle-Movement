@@ -4,24 +4,26 @@ class Default extends React.Component {
   render () {
     const { title, comment } = this.props
     return (
-      <html>
+      <>
         <head>
           {/* <link rel="stylesheet" href="/css/app.css" />  */}
-         
+
           <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' />
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,900' />
-           <link rel='stylesheet' href='/css/style.css' />
+          <link rel='stylesheet' href='/css/style.css' />
           <title>{title}</title>
         </head>
         <header>
-            <a href='/comments'>Go Home</a>
-            Change Muscle Group
-            <a href='/comments/new'>Add a New Comment</a>
-            Log In
+          <a href='/comments'>Go Home</a>
+          Change Muscle Group
+          <a href='/comments/new'>Add a New Comment</a>
+          <a href="/user/signup">Sign Up</a>
+          {title === 'Login to Muscle Movement Account' || title === 'Sign Up For Muscle Movement' ? <a href="/user/logout"><button>Logout</button></a> : ''}
+
         </header>
         <div className='muscle-title'>Muscle Movement</div>
-        <body className = {this.props.pageClass? this.props.pageClass : ''}>
-          
+        <body className={this.props.pageClass ? this.props.pageClass : ''}>
+
           <main className='muscle-table'>
 
             <div className='muscle-groups'>
@@ -54,7 +56,7 @@ class Default extends React.Component {
 
         </body>
         {/* <footer>Created By Devon</footer> */}
-      </html>
+      </>
 
     )
   }
