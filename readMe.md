@@ -1,4 +1,4 @@
-#Muscle Movement
+# Muscle Movement
 ---------------
 
 ####The idea behind Muscle Movement is a place to go to learn about the different muscles of the body and some of the best ways to manipulate them. I would like to have a 3rd party API so that there will be information of how to stretch certain muscles and what workouts would go best with them.
