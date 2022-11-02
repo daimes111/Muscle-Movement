@@ -14,11 +14,11 @@ class Default extends React.Component {
           <title>{title}</title>
         </head>
         <header>
-          <a href='/comments'>Go Home</a>
+          <a href="/comments">Go Home</a>
           Change Muscle Group
-          <a href='/comments/new'>Add a New Comment</a>
+          <a href="/comments/new">Add a New Comment</a>
           <a href="/user/signup">Sign Up</a>
-          {title === 'Login to Muscle Movement Account' || title === 'Sign Up For Muscle Movement' ? <a href="/user/logout"><button>Logout</button></a> : ''}
+          {title === 'Login to Muscle Movement Account' || title === 'Sign Up For Muscle Movement' ? <a href="/user/logout"><button>Logout</button></a> : ''} 
 
         </header>
         <div className='muscle-title'>Muscle Movement</div>
@@ -55,7 +55,7 @@ class Default extends React.Component {
           {this.props.children}
 
         </body>
-        {/* <footer>Created By Devon</footer> */}
+        <footer>Created By Devon</footer>
       </>
 
     )

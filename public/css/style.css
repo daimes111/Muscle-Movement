@@ -13,13 +13,26 @@ body {
   background-size: cover;
 } 
 
-.index-page {
-  position: relative;
-  font-family: Roboto;
-  columns: 2;
-  border: solid black;
-  overflow: hidden;
-} 
+/* All pages header  */
+header, footer {
+  position:relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  height: 30px;
+  width: 100vw;
+}
+header, a {
+  color: white;
+  font-size: small;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
 /* Muscle group box */
 .muscle-table {
   position: relative;
@@ -29,15 +42,15 @@ body {
   /* float: left; */
   background: rgba(238, 238, 238, 0.909);
   width: 60%;
-  height: calc(60vh - 150px);
-  height: -moz-calc(60vh - 150px);
-  height: -webkit-calc(60vh - 150px);
+  height: calc(60vh - 50px);
+  height: -moz-calc(60vh - 50px);
+  height: -webkit-calc(60vh - 50px);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
   overflow: hidden;
   border-top: 0.75rem solid #00bbd4d0;
-  top: 250px;
+  top: 185px;
   /* display: none; */
 }
 .muscle-groups h1 {
@@ -227,53 +240,43 @@ main .info:hover {
 main .info a {
   color: #eee;
 }
-/* All pages header  */
-header {
-  position:relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
-  height: 40px;
-  width: 100vw;
-}
-
-header, a {
-  color: white;
-}
-
 
 /* index page css */
+.index-page {
+  position: relative;
+  font-family: Roboto;
+  columns: 2;
+  border: solid black;
+  overflow: hidden;
+} 
 .muscle-title {
   width: 100vw;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: -70px;
   text-align: center;
-  font-size: 100px;
+  font-size: 50px;
   /* border: solid black */
 }
 .comments {
 position: relative;
-top: -10%;
 }
 .comments-header {
   margin: auto;
   width: 50%;
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .comment-thread {
   position:relative;
-  width: 500px;
+  width: 400px;
   max-width: 100%;
   margin: auto;
   padding: 0 30px;
  /* background: rgba(176, 173, 173, 0.6) no-repeat cover; */
   /* background: linear-gradient(50deg, #00bbd458, #29b5c7d0); */
   background: linear-gradient(50deg, #00bbd4ab, #0de1fc9d);
-
   border: 1px solid transparent; /* Removes margin collapse transparent */
   list-style: none;
   top:-20px;
@@ -281,17 +284,21 @@ top: -10%;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
   color: rgb(50, 41, 41);
 }
-.comment {
-  /* position: relative; */
-  margin: 20px auto;
-  /* float: left; */
+.comment-body {
+ display: block;
+ color: black;
 }
+.comment-body:hover {
+  color: white;
+}
+
 .comment-heading {
   /* display: flex; */
   display: inline-block;
   /* align-items: center; */
+  padding-top: 5px;
   height: 50px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .group-header {
   font-weight: bold;
@@ -329,9 +336,10 @@ top: -10%;
 .btns {
   display: inline-block;
   padding: 5px;
+ 
 }
 
-.show-page, .edit-page, .new-page {
+.show-page, .edit-page, .new-page, .login-page, .signup-page {
   margin-bottom: 10px;
   text-align: center;
   /* padding: 2rem 0; */
@@ -341,15 +349,18 @@ top: -10%;
 }
 .show-page > .muscle-table{
   display: none;
-  
 }
 .new-page  > .muscle-table{
   display: none;
-  border: black;
 }
 .edit-page > .muscle-table{
   display: none;
-  border: black;
+}
+.login-page > .muscle-table{
+  display: none;
+}
+.signup-page > .muscle-table{
+  display: none;
 }
 .show-page > .muscle-title{
   margin-bottom: 10px;
@@ -358,5 +369,11 @@ top: -10%;
   margin-bottom: 10px;
 }
 .edit-page > .muscle-title{
-  margin-bottom: 5%;
+  margin-bottom: 10px;
+}
+.login-page > .muscle-title{
+  margin-bottom: 10px;
+}
+.signup-page > .muscle-title{
+  margin-bottom: 10px;
 }

@@ -23,17 +23,17 @@ app.use(express.json())
 app.use(methondOverride('_method'))
 app.use(express.static('public'))
 
-// app.use(
-//   session({
-//     secret: process.env.SECRET,
-//     store: MongoStore.create({mongoURI: process.env.MONGO_URI}),
-//     saveUninitialized: true,
-//     resave: false
-//   })
-// )
+app.use(
+  session({
+    secret: process.env.SECRET,
+    store: MongoStore.create({mongoUrl: process.env.MONGO_URI}),
+    saveUninitialized: true,
+    resave: false
+  })
+)
 
 app.use('/comments', require('./controllers/routeController'))
-app.use('/users', require('./controllers/authController'))
+app.use('/user', require('./controllers/authController'))
 
 app.get('/', (req,res) => {
   res.send("Why wont you work :(")

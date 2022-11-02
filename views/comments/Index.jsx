@@ -8,7 +8,7 @@ class Index extends React.Component {
     return (
       <Default pageClass='index-page'>
         <div className='comments'>
-          <h1 className='comments-header' style={{ fontSize: '60px' }}>User Comments</h1>
+          <h1 className='comments-header' style={{ fontSize: '30px' }}>User Comments</h1>
           <ul className='comment-thread'>
             {comments.map((comment) => {
               const { name, userComment, muscleGroup, _id, slug, enjoyWorkout } = comment
@@ -19,13 +19,8 @@ class Index extends React.Component {
                     <span className='group-header'>Muscle Group: </span>{muscleGroup} <br />
                     Created on: {moment().format('MMM Do YY')}
                   </div>
-                  <div className='comment-body'>{userComment}
-                  </div>
-
-                  <form method='GET' action={`/comments/${_id}`}>
-                    <input type='submit' value='View Comment' />
-                  </form>
-
+                 
+                  <a className='comment-body' method='GET' href={`/comments/${_id}`}>{userComment}</a>
                 </li>
               )
             })}
