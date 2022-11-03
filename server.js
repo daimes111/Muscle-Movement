@@ -26,7 +26,7 @@ app.use(express.static('public'))
 app.use(
   session({
     secret: process.env.SECRET,
-    store: MongoStore.create({mongoUrl: process.env.MONGO_URI}),
+    store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
     saveUninitialized: true,
     resave: false
   })
@@ -35,8 +35,8 @@ app.use(
 app.use('/comments', require('./controllers/routeController'))
 app.use('/user', require('./controllers/authController'))
 
-app.get('/', (req,res) => {
-  res.send("Why wont you work :(")
+app.get('/', (req, res) => {
+  res.send('Why wont you work :(')
 })
 
 app.listen(PORT, () => {

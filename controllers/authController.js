@@ -33,8 +33,8 @@ router.post('/login', async (req, res) => {
       if (user) {
         const result = await bcrypt.compare(password, user.password)
         if (result) {
-            req.session.username = username
-            req.session.loggedIn = true
+          req.session.username = username
+          req.session.loggedIn = true
           res.redirect('/comments')
         } else {
           res.json({ error: "password doesn't match" })
@@ -49,15 +49,15 @@ router.post('/login', async (req, res) => {
     })
 })
 
-router.get('logout', (req,res) => {
-    req.session.destroy((err) => {
-        if(err) {
-            console.error(err)
-            res.status(500).json(err)
-        } else {
-            res.redirect('/')
-        }
-    })
+router.get('/logout', (req, res) => {
+  req.session.destroy((err) => {
+    if (err) {
+      console.error(err)
+      res.status(500).json(err)
+    } else {
+      res.redirect('/user/login')
+    }
+  })
 })
 
 module.exports = router

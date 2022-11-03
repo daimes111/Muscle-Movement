@@ -10,7 +10,8 @@ class Login extends React.Component {
             <legend>New User</legend>
             <label>USERNAME: <input type='text' name='username' required /> </label><br />
             <label>PASSWORD: <input type='password' name='password' required /> </label><br />
-            <input type='submit' value='Login Account' />
+            <input type='submit' value='Login Account' /><br />
+            Need An Account?: <a href='/user/signup'> Sign Up!</a>
           </fieldset>
         </form>
       </Default>

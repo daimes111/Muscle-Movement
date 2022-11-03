@@ -19,7 +19,7 @@ class Index extends React.Component {
                     <span className='group-header'>Muscle Group: </span>{muscleGroup} <br />
                     Created on: {moment().format('MMM Do YY')}
                   </div>
-                 
+
                   <a className='comment-body' method='GET' href={`/comments/${_id}`}>{userComment}</a>
                 </li>
               )

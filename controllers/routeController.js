@@ -4,11 +4,11 @@ const dataController = require('./dataController')
 const viewController = require('./viewController')
 
 const auth = (req, res, next) => {
-    if(req.session.loggedIn) {
-        next()
-    } else {
-        res.redirect("/user/login")
-    }
+  if (req.session.loggedIn) {
+    next()
+  } else {
+    res.redirect('/user/login')
+  }
 }
 // use this if you want to on individual
 

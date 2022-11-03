@@ -5,16 +5,18 @@
 ----------------
 
 ####The Muscle Selector diagram was created by [Ryan M Poe] 
+![](/images/Muscle%20Group%20Selector.png)
+
 #####The plan was to select parts of the muscle and have it direct to a certain page of the APT with the information on that muscle.
 ![]()
 
 #####This posed more difficult than expected when converting to run the code with React. 
 
 ####See the code before using React: 
-![]()
+![](/images/Muscle%20Fill.png)
 
 ####and the code after
-![]()
+![](/images/React%20Body%20Code.png)
 
 ###This code is what was used to give the fill capabilities with click features in CSS
 
