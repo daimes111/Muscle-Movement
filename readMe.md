@@ -5,6 +5,7 @@
 ----------------
 
 ## Where to Start?
+[SignUp](localhost:3003/signup)
 
 ### Users are able to start at either the Index Page or the Sign Up page. I would like a user to view comments and have access to the muscle group selector without having to login. However, users will be redirected to the login page, if they do not have an account, before they are able to edit, delete, or create a comment. 
 ![](/images/SignUp%20Page.png)
