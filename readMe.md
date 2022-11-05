@@ -5,7 +5,8 @@
 ----------------
 
 ## Where to Start?
-[SignUp](http://localhost:3003/user/signup)
+[SignUp](http://localhost:3003/user/signup)<br />
+[Comments Home](http://localhost:3003/comments)
 
 ### Users are able to start at either the Index Page or the Sign Up page. I would like a user to view comments and have access to the muscle group selector without having to login. However, users will be redirected to the login page, if they do not have an account, before they are able to edit, delete, or create a comment. 
 ![](/images/SignUp%20Page.png)
@@ -13,7 +14,7 @@
 ### Once they are logged in, they are free to roam and adjust comments. That is currently an error I would like to work on. Ideally, they would only be able to edit and delete their own comments. 
 ----------------
 
-### The Muscle Selector diagram was created by [Ryan M Poe](https://codepen.io/baublet/pen/PzjmpL) 
+### On the index page you get to see the muscle selector and the users comments. The Muscle Selector diagram was created by [Ryan M Poe](https://codepen.io/baublet/pen/PzjmpL) and was a big factor that I wanted to base my project around. 
 ![](/images/Muscle%20Group%20Selector.png)
 
 ### The plan was to select parts of the muscle and have it direct to a certain page of the APT with the information on that muscle. This is definietly something I want to work on more to incorporate
@@ -33,9 +34,9 @@
 ----------------
 
 ### Technologies Used: 
->HTML
->Javascript/CSS
->React
+*HTML<br />
+*Javascript/CSS<br />
+*ßReact
 
 -----------------
 ## Original thoughts
@@ -47,7 +48,8 @@
 *API functionality <br /> 
 *Event listeners on the muscles to new pages <br />
 *Replies to comments <br /> 
-*Muscle show pages with comments on that specific muscle
+*Muscle show pages with comments on that specific muscle<br />
+*See top comments based off muscle group first that will have a link to see all comments for that muscle group. 
 
 ## Current errors
 *The footer on the Index page is messed up due to the columns. <br />
