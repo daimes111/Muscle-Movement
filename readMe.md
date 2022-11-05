@@ -43,10 +43,13 @@
 ![](/images/Original%20Layout.png)
 
 ## What's Next
-#### API functionality, event listeners on the muscles to new pages, Replies to comments, muscle show pages with comments on that specific muscle
+*API functionality <br /> 
+*Event listeners on the muscles to new pages <br />
+*Replies to comments <br /> 
+*Muscle show pages with comments on that specific muscle
 
 ## Current errors
->The footer on the Index page is messed up due to the columns. 
->Having trouble having it disconnected.
->Login and Create Account page look the same after someone as logged In. 
->No notification when logging out
+*The footer on the Index page is messed up due to the columns. <br />
+*Having trouble having it disconnected. <br />
+*Login and Create Account page look the same after someone as logged In. <br />
+*No notification when logging out<br />

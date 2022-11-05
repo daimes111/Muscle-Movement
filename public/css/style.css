@@ -13,6 +13,21 @@ body {
   background-size: cover;
 } 
 
+/* index home page */
+.indexHome-page {
+  display: flex;
+  font-size: 50px;
+  align-self: center;
+  justify-content: center;
+}
+.indexHome-page a {
+  font-size: 50px;
+  color: black;
+}
+.indexHome-page a:hover {
+
+  color: white;
+}
 /* All pages header  */
 header, footer {
   position:relative;

@@ -6,7 +6,7 @@ class Index extends React.Component {
   render () {
     const { comments } = this.props
     return (
-      <Default pageClass='index-page'>
+      <Default title='comments' style={{display:'hidden'}}pageClass='index-page'>
         <div className='comments'>
           <h1 className='comments-header' style={{ fontSize: '30px' }}>User Comments</h1>
           <ul className='comment-thread'>
